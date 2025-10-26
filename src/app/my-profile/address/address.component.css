@@ -1,0 +1,143 @@
+
+  
+  .page-container {
+    padding: 40px;
+  }
+  
+  /* ============ Common Section Styles ============ */
+  section {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    max-width: 800px;
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+  
+  section h2 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  /* ============ Profile Section ============ */
+  .profile-details p,
+  .address-details p {
+    font-size: 1rem;
+    color: #555;
+    margin: 8px 0;
+  }
+  
+  /* ============ Address Section ============ */
+  .address-section {
+    background-color: #fdfdfd;
+  }
+  
+  /* ============ Product Section ============ */
+  .product-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-container {
+    display: flex;
+    gap: 40px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  .image-section img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .details-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .product-name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 10px;
+  }
+  
+  .product-label {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 5px 12px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .product-description {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  
+  .product-price {
+    font-size: 1.8rem;
+    color: #28a745;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  
+  .buy-btn {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: fit-content;
+  }
+  
+  .buy-btn:hover {
+    background-color: #e64a19;
+  }
+  
+  /* ============ Responsive ============ */
+  @media (max-width: 768px) {
+    .product-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .image-section img {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+    }
+  
+    .details-section {
+      align-items: center;
+    }
+  
+    section {
+      text-align: center;
+    }
+  }
+  

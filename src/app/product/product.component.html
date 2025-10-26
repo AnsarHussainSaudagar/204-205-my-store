@@ -1,0 +1,23 @@
+<div class="product-page">
+    <div class="product-container" style="position: relative;">
+        <button style="position: absolute; right: 0;" (click)="onClickNext()" class="btn btn-info mx-2">Next</button>
+      <div class="image-section">
+        <img [src]="productData.img" alt="Product Image">
+      </div>
+      
+      <div class="details-section">
+          <h1 class="product-name">{{productData.name | titlecase}}</h1>
+          <span *ngIf="costly" class="badge rounded-pill text-bg-danger">Costly</span>  
+        <p class="product-description">
+          {{productData.description}}
+        </p>
+  
+        <div class="product-price">
+          {{productData.price | currency:'INR'}}
+        </div>
+  
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+  </div>
+  
